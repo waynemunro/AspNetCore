@@ -13,7 +13,8 @@ namespace Microsoft.AspNetCore.Mvc.ViewFeatures.Filters
     {
         protected readonly ITempDataDictionaryFactory _tempDataFactory;
 
-        public SaveTempDataPropertyFilterBase(ITempDataDictionaryFactory tempDataFactory)
+        public SaveTempDataPropertyFilterBase(
+            ITempDataDictionaryFactory tempDataFactory)
         {
             _tempDataFactory = tempDataFactory;
         }
@@ -120,18 +121,6 @@ namespace Microsoft.AspNetCore.Mvc.ViewFeatures.Filters
             {
                 throw new InvalidOperationException(
                     Resources.FormatTempDataProperties_PublicGetterSetter(property.DeclaringType.FullName, property.Name, nameof(TempDataAttribute)));
-            }
-
-            var propertyType = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
-
-            if (!TempDataSerializer.CanSerializeType(propertyType, out var errorMessage))
-            {
-                var messageWithPropertyInfo = Resources.FormatTempDataProperties_InvalidType(
-                    property.DeclaringType.FullName,
-                    property.Name,
-                    nameof(TempDataAttribute));
-
-                throw new InvalidOperationException($"{messageWithPropertyInfo} {errorMessage}");
             }
         }
     }

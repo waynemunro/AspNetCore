@@ -19,6 +19,7 @@ namespace HtmlGenerationWebSite
             // null which is interpreted as true unless element includes an action attribute.
             services.AddMvc(ConfigureMvcOptions)
                 .InitializeTagHelper<FormTagHelper>((helper, _) => helper.Antiforgery = false)
+                .AddNewtonsoftJsonFeatures()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services.AddSingleton(typeof(ISignalTokenProviderService<>), typeof(SignalTokenProviderService<>));

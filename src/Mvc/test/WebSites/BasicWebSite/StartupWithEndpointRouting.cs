@@ -17,6 +17,7 @@ namespace BasicWebSite
 
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest)
+                .AddNewtonsoftJsonFeatures()
                 .AddXmlDataContractSerializerFormatters();
 
             services.ConfigureBaseWebSiteAuthPolicies();

@@ -13,7 +13,8 @@ namespace FormatterWebSite
             services.AddMvc(options =>
             {
                 options.RespectBrowserAcceptHeader = true;
-            });
+            })
+            .AddNewtonsoftJsonFeatures();
         }
 
         public void Configure(IApplicationBuilder app)

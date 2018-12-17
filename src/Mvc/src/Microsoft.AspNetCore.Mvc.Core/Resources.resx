@@ -490,4 +490,7 @@
   <data name="ApiConventions_Title_422" xml:space="preserve">
     <value>Unprocessable Entity</value>
   </data>
+  <data name="ReferenceToNewtonsoftJsonRequired" xml:space="preserve">
+    <value>Invoking this operation requires a reference to '{0}'. Modify your application to add a reference to the '{0}' package.</value>
+  </data>
 </root>

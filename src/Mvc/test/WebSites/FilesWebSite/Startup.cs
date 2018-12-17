@@ -15,6 +15,7 @@ namespace FilesWebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc()
+                .AddNewtonsoftJsonFeatures()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest);
         }
 

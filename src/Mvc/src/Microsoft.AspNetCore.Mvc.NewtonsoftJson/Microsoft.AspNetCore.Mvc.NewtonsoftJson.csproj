@@ -1,0 +1,25 @@
+﻿<Project Sdk="Internal.AspNetCore.Sdk">
+
+  <PropertyGroup>
+    <Description>ASP.NET Core MVC features that use Newtonsoft.Json. Includes formatter for JSON and JSON PATCH input and output, and extensions to Controllers.</Description>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>aspnetcore;aspnetcoremvc;json</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="$(SharedSourceRoot)ClosedGenericMatcher\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.ViewFeatures\Microsoft.AspNetCore.Mvc.ViewFeatures.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="$(MicrosoftAspNetCoreJsonPatchPackageVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="$(NewtonsoftJsonBsonPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Microsoft.AspNetCore.Mvc.Core\Formatters\ResponseContentTypeHelper.cs" />
+  </ItemGroup>
+</Project>

@@ -191,7 +191,8 @@ namespace Microsoft.AspNetCore.Mvc.IntegrationTests
                 serviceCollection.AddSingleton(Options.Create(mvcOptions));
             }
 
-            serviceCollection.AddMvc();
+            serviceCollection.AddMvc()
+                .AddNewtonsoftJsonFeatures();
             serviceCollection
                 .AddSingleton<ObjectPoolProvider, DefaultObjectPoolProvider>()
                 .AddSingleton<ILoggerFactory>(NullLoggerFactory.Instance)

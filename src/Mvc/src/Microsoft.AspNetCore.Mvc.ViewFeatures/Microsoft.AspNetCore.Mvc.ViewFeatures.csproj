@@ -16,13 +16,11 @@ Microsoft.AspNetCore.Mvc.ViewComponent</Description>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.Core\Microsoft.AspNetCore.Mvc.Core.csproj" />
     <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.DataAnnotations\Microsoft.AspNetCore.Mvc.DataAnnotations.csproj" />
-    <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.Formatters.Json\Microsoft.AspNetCore.Mvc.Formatters.Json.csproj" />
 
     <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="$(MicrosoftAspNetCoreAntiforgeryPackageVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" Version="$(MicrosoftAspNetCoreDiagnosticsAbstractionsPackageVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="$(MicrosoftAspNetCoreHtmlAbstractionsPackageVersion)" />
     <PackageReference Include="Microsoft.Extensions.WebEncoders" Version="$(MicrosoftExtensionsWebEncodersPackageVersion)" />
-    <PackageReference Include="Newtonsoft.Json.Bson" Version="$(NewtonsoftJsonBsonPackageVersion)" />
   </ItemGroup>
 
 </Project>

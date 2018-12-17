@@ -1,0 +1,26 @@
+﻿[
+  {
+    "TypeId": "public class Microsoft.AspNetCore.Mvc.Formatters.Json.JsonPatchOperationsArrayProvider : Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public static class Microsoft.Extensions.DependencyInjection.MvcJsonMvcBuilderExtensions",
+    "MemberId": "public static Microsoft.Extensions.DependencyInjection.IMvcBuilder AddJsonOptions(this Microsoft.Extensions.DependencyInjection.IMvcBuilder builder, System.Action<Microsoft.AspNetCore.Mvc.MvcJsonOptions> setupAction)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public static class Microsoft.Extensions.DependencyInjection.MvcJsonMvcCoreBuilderExtensions",
+    "MemberId": "public static Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder AddJsonFormatters(this Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder builder)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public static class Microsoft.Extensions.DependencyInjection.MvcJsonMvcCoreBuilderExtensions",
+    "MemberId": "public static Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder AddJsonFormatters(this Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder builder, System.Action<Newtonsoft.Json.JsonSerializerSettings> setupAction)",
+    "Kind": "Removal"
+  },
+  {
+    "TypeId": "public static class Microsoft.Extensions.DependencyInjection.MvcJsonMvcCoreBuilderExtensions",
+    "MemberId": "public static Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder AddJsonOptions(this Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder builder, System.Action<Microsoft.AspNetCore.Mvc.MvcJsonOptions> setupAction)",
+    "Kind": "Removal"
+  }
+]

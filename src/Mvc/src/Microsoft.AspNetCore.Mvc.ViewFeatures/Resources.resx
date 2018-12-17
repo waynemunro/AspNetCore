@@ -259,15 +259,6 @@
   <data name="ViewComponentResult_NameOrTypeMustBeSet" xml:space="preserve">
     <value>Either the '{0}' or '{1}' property must be set in order to invoke a view component.</value>
   </data>
-  <data name="TempData_CannotDeserializeToken" xml:space="preserve">
-    <value>Cannot deserialize {0} of type '{1}'.</value>
-  </data>
-  <data name="TempData_CannotSerializeDictionary" xml:space="preserve">
-    <value>The '{0}' cannot serialize a dictionary with a key of type '{1}'. The key must be of type '{2}'.</value>
-  </data>
-  <data name="TempData_CannotSerializeType" xml:space="preserve">
-    <value>The '{0}' cannot serialize an object of type '{1}'.</value>
-  </data>
   <data name="Dictionary_DuplicateKey" xml:space="preserve">
     <value>The collection already contains an entry with key '{0}'.</value>
   </data>

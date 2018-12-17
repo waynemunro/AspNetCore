@@ -31,6 +31,7 @@ namespace BasicWebSite
                     options.EnableEndpointRouting = false;
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Latest)
+                .AddNewtonsoftJsonFeatures()
                 .AddXmlDataContractSerializerFormatters();
 
             services.ConfigureBaseWebSiteAuthPolicies();

@@ -1690,6 +1690,20 @@ namespace Microsoft.AspNetCore.Mvc.Core
         internal static string FormatApiConventions_Title_422()
             => GetString("ApiConventions_Title_422");
 
+        /// <summary>
+        /// Invoking this operation requires a reference to '{0}'. Modify your application to add a reference to the '{0}' package.
+        /// </summary>
+        internal static string ReferenceToNewtonsoftJsonRequired
+        {
+            get => GetString("ReferenceToNewtonsoftJsonRequired");
+        }
+
+        /// <summary>
+        /// Invoking this operation requires a reference to '{0}'. Modify your application to add a reference to the '{0}' package.
+        /// </summary>
+        internal static string FormatReferenceToNewtonsoftJsonRequired(object p0)
+            => string.Format(CultureInfo.CurrentCulture, GetString("ReferenceToNewtonsoftJsonRequired"), p0);
+
         private static string GetString(string name, params string[] formatterNames)
         {
             var value = _resourceManager.GetString(name);

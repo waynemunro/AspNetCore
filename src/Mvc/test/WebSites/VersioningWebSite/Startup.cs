@@ -14,6 +14,7 @@ namespace VersioningWebSite
         {
             // Add MVC services to the services container
             services.AddMvc(ConfigureMvcOptions)
+                .AddNewtonsoftJsonFeatures()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services.AddScoped<TestResponseGenerator>();
