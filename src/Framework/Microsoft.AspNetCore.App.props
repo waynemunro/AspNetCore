@@ -11,8 +11,6 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <Dependency Include="Microsoft.AspNet.WebApi.Client"                               Version="$(MicrosoftAspNetWebApiClientPackageVersion)"
-           AssemblyName="System.Net.Http.Formatting" />
     <Dependency Include="Microsoft.AspNetCore.Antiforgery"                             Version="$(MicrosoftAspNetCoreAntiforgeryPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Authentication.Abstractions"             Version="$(MicrosoftAspNetCoreAuthenticationAbstractionsPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Authentication.Cookies"                  Version="$(MicrosoftAspNetCoreAuthenticationCookiesPackageVersion)" />
@@ -54,7 +52,6 @@
     <Dependency Include="Microsoft.AspNetCore.Mvc.Core"                                Version="$(MicrosoftAspNetCoreMvcCorePackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Mvc.Cors"                                Version="$(MicrosoftAspNetCoreMvcCorsPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Mvc.DataAnnotations"                     Version="$(MicrosoftAspNetCoreMvcDataAnnotationsPackageVersion)" />
-    <Dependency Include="Microsoft.AspNetCore.Mvc.Formatters.Json"                     Version="$(MicrosoftAspNetCoreMvcFormattersJsonPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Mvc.Formatters.Xml"                      Version="$(MicrosoftAspNetCoreMvcFormattersXmlPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Mvc.Localization"                        Version="$(MicrosoftAspNetCoreMvcLocalizationPackageVersion)" />
     <Dependency Include="Microsoft.AspNetCore.Mvc.Razor"                               Version="$(MicrosoftAspNetCoreMvcRazorPackageVersion)" />
@@ -131,7 +128,6 @@
     <Dependency Include="Microsoft.Extensions.Primitives"                              Version="$(MicrosoftExtensionsPrimitivesPackageVersion)" />
     <Dependency Include="Microsoft.Extensions.WebEncoders"                             Version="$(MicrosoftExtensionsWebEncodersPackageVersion)" />
     <Dependency Include="Microsoft.Net.Http.Headers"                                   Version="$(MicrosoftNetHttpHeadersPackageVersion)" />
-    <Dependency Include="Newtonsoft.Json.Bson"                                         Version="$(NewtonsoftJsonBsonPackageVersion)" />
     <Dependency Include="Newtonsoft.Json"                                              Version="$(NewtonsoftJsonPackageVersion)" />
     <Dependency Include="System.IO.Pipelines"                                          Version="$(SystemIOPipelinesPackageVersion)" />
     <Dependency Include="System.Net.WebSockets.WebSocketProtocol"                      Version="$(SystemNetWebSocketsWebSocketProtocolPackageVersion)" />

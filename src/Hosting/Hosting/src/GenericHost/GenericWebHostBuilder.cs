@@ -89,15 +89,9 @@ namespace Microsoft.AspNetCore.Hosting.Internal
                 services.TryAddSingleton<DiagnosticListener>(listener);
                 services.TryAddSingleton<DiagnosticSource>(listener);
 
-                services.TryAddSingleton<IHttpContextFactory, HttpContextFactory>();
+                services.TryAddSingleton<IHttpContextFactory, DefaultHttpContextFactory>();
                 services.TryAddScoped<IMiddlewareFactory, MiddlewareFactory>();
                 services.TryAddSingleton<IApplicationBuilderFactory, ApplicationBuilderFactory>();
-
-                // Conjure up a RequestServices
-                services.TryAddTransient<IStartupFilter, AutoRequestServicesStartupFilter>();
-
-                // Ensure object pooling is available everywhere.
-                services.TryAddSingleton<ObjectPoolProvider, DefaultObjectPoolProvider>();
 
                 // Support UseStartup(assemblyName)
                 if (!string.IsNullOrEmpty(webHostOptions.StartupAssembly))

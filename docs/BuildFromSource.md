@@ -3,8 +3,6 @@ Build ASP.NET Core from Source
 
 Building ASP.NET Core from source allows you tweak and customize ASP.NET Core, and to contribute your improvements back to the project.
 
-:warning: We are currently in the middle of restructing our source code. These instructions will likely change rapidly during November and December 2018.
-
 See https://github.com/aspnet/AspNetCore/labels/area-infrastructure for known issues and to track ongoing work.
 
 ## Install pre-requistes
@@ -61,13 +59,14 @@ Before opening our .sln files in Visual Studio or VS Code, you need to perform t
 
 1. Executing the following on command-line:
    ```
-   .\build.cmd
+   .\restore.cmd
    ```
    This will download required tools and build the entire repository once. At that point, you should be able to open .sln files to work on the projects you care about.
 
-2. Use the `startvs.cmd` script to open Visual Studio .sln files. This script first sets required environment variables.
+   > :bulb: Pro tip: you will also want to run this command after pulling large sets of changes. On the master branch, we regularly update the versions of .NET Core SDK required to build the repo.
+   > You will need to restart Visual Studio every time we update the .NET Core SDK.
 
-> :bulb: Pro tip: you will also want to run this command after pulling large sets of changes. Visual Studio will only build projects in a solution file, and makes a best effort to use other files on disk. If you pull many changes, the files on disk may be stale and will need to re-build.
+2. Use the `startvs.cmd` script to open Visual Studio .sln files. This script first sets required environment variables.
 
 ### Solution files
 
